@@ -1,12 +1,160 @@
 :root {
   font: 16px / 1 sans-serif;
+  color: #d5d5d5;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 html {
   height: 100%;
 }
 
+/* Header Adjustments */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Navigation adjustments */
+.header-links ul {
+  padding-bottom: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+/* H1 adjustments */
+h1 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
 body {
-  margin: 0;
-  min-height: 100%;
+  background-color: #303030;
+  margin: 1rem;
+}
+
+/* Navigation adjustments */
+nav ul {
+  padding-left: 0;
+  padding-bottom: 5rem;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav li {
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+nav li a {
+  color: #828282;
+}
+.header-links li a {
+  color: lightskyblue;
+}
+
+/* hyperlink attributes all */
+a {
+  color: #d5d5d5;
+  text-decoration: none;
+}
+
+.red-link {
+  color: #ed6964;
+  text-decoration: none;
+}
+
+.red-text {
+  color: #ed6964;
+}
+
+/* Images Section */
+.the-pics > section img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.the-pics section {
+  /* background-color: pink; */
+  padding: 2rem;
+}
+
+.the-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Closing comment adjustments */
+.close {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+/* Get in touch link "button" adjustments */
+.get-in-touch {
+  height: 3rem;
+  width: 10rem;
+  margin: 0rem auto 1rem auto;
+  background-color: black;
+  display: flex;
+}
+.center-get-in-touch {
+  color: white;
+  font-size: 0.8rem;
+  margin: auto;
+}
+
+/* Hide non-mobile content */
+.header-links,
+.header-get-in-touch {
+  display: none;
+}
+
+/* Footer */
+footer {
+  margin-bottom: 4rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-links,
+  .header-get-in-touch {
+    display: initial;
+  }
+  /* Images Section */
+  .the-pics > section {
+    width: 40%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .header-links,
+  .header-get-in-touch {
+    display: initial;
+  }
+
+  /* Images Section */
+  .sectionOne,
+  .sectionTwo,
+  .sectionSeven,
+  .sectionEight {
+    width: 40%;
+  }
+  .sectionThree,
+  .sectionFour,
+  .sectionFive {
+    width: 27%;
+  }
+  .sectionSix {
+    width: 100%;
+  }
 }
